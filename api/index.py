@@ -4,10 +4,8 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
-# Archivos estáticos
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Templates
 templates = Jinja2Templates(directory="templates")
 
 
@@ -41,4 +39,3 @@ async def historia(request: Request):
         "historia.html",
         {"request": request}
     )
-    
