@@ -1,25 +1,77 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página FastAPI</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
+{% block titulo %}
+Honda Motos
+{% endblock %}
 
-    <header>
-        <h1>Mi Página Web con FastAPI</h1>
-    </header>
+{% block contenido %}
 
-    <main>
-        <p>Proyecto funcionando correctamente en Vercel 🚀</p>
+<section class="hero-spec">
 
-        <button id="btn">Haz clic</button>
-    </main>
+    <h1>Honda Motos</h1>
 
-    <script src="/static/js/script.js"></script>
+    <p>
+        Innovación, velocidad y potencia sobre dos ruedas.
+    </p>
 
-</body>
-</html>
+</section>
+
+<main class="container">
+
+<section class="specs-intro">
+
+    <h2>Bienvenido a Honda</h2>
+
+    <hr class="separator">
+
+    <p>
+        Explora los modelos, la historia y la tecnología
+        que han convertido a Honda en una de las marcas
+        más importantes del mundo.
+    </p>
+
+</section>
+
+<section class="specs-grid">
+
+    <article class="spec-card">
+
+        <img src="/static/imagenes/c_img_740x370.17vrt1jy61glrq.jpg">
+
+        <h3>Diseño Deportivo</h3>
+
+        <p>
+            Motocicletas inspiradas en competición.
+        </p>
+
+    </article>
+
+    <article class="spec-card">
+
+        <img src="/static/imagenes/descarga (1).jpg">
+
+        <h3>Tecnología</h3>
+
+        <p>
+            Innovación japonesa en cada detalle.
+        </p>
+
+    </article>
+
+    <article class="spec-card">
+
+        <img src="/static/imagenes/descarga (2).jpg">
+
+        <h3>Aventura</h3>
+
+        <p>
+            Modelos preparados para cualquier terreno.
+        </p>
+
+    </article>
+
+</section>
+
+</main>
+
+{% endblock %}
