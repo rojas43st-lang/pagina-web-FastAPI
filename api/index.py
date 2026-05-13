@@ -6,7 +6,6 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-
 @app.get("/")
-async def root():
+async def home():
     return FileResponse("templates/index.html")
