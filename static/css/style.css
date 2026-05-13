@@ -8,6 +8,7 @@ body{
     font-family:Arial, sans-serif;
     background:#f5f5f5;
     color:#222;
+    margin:0;
 }
 
 /* NAVBAR */
@@ -64,7 +65,8 @@ body{
     background:linear-gradient(120deg, #c40000, #ff4d4d);
     color:white;
     text-align:center;
-    padding:100px 20px;
+    padding:80px 20px;
+    margin-top:0;
 }
 
 .hero-spec h1{
@@ -81,7 +83,10 @@ body{
 /* CONTENEDOR */
 
 .container{
-    padding:60px 50px;
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:60px 0;
 }
 
 /* TITULOS */
@@ -140,11 +145,6 @@ body{
 .spec-card p{
     padding:0 20px 20px;
     line-height:1.6;
-}
-
-/* HISTORIA */
-
-.spec-card p{
     font-size:17px;
 }
 
@@ -172,7 +172,7 @@ body{
     }
 
     .container{
-        padding:40px 20px;
+        width:95%;
     }
 
 }
